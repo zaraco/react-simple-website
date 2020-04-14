@@ -9,18 +9,20 @@ class About extends Component {
     render() {
         return (
             <div>
-                <h1 style={{alignText: "center"}}>About Us</h1>
+                <h1 style={{ textAlign: "center", color: "pink", fontFamily: "Times New Roman", fontWeight: "bold"}}>About Us</h1>
                 <Figure>
                     <Figure.Image
-                        width={300}
-                        height={200}
+                        width="100%"
                         alt="about us"
-                        src="download.jpeg"
+                        src="best-about-us-pages.jpg"
+                        style={{width: "100%", height: "350px", objectFit: "cover", boxShadow: "5px 10px pink"}}
+
                     />
-                    <Figure.Caption>
+                    <br/>
+                    <Figure.Caption style={{color: "white", fontWeight: "bold"}}>
                         Engineering Services, Equipment Supply and  Implementation of EPC projects in Oil, Gas, Petrochemical, Steel and Power Plants.                    </Figure.Caption>
                 </Figure>
-                <p>
+                <p style={{textAlign: "justify", textJustify: "inter-word", fontWeight: "bold"}}>
                     Power Component Co. is established in order to provide Engineering Services, Equipment Supply and  Implementation of EPC projects in Oil, Gas, Petrochemical, Steel and Power Plants.
 
                     Our company which has been qualified through its managers and engineers with more than 20 years of experience and in cooperation with domestic and foreign companies according to the international standards has provided the high quality services in EPC projects.

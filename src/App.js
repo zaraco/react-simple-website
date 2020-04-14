@@ -1,7 +1,19 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import {Container, Row, Col, Carousel, Navbar, Nav, NavDropdown, Form, FormControl, Button} from "react-bootstrap";
+import {
+    Container,
+    Row,
+    Col,
+    Carousel,
+    Navbar,
+    Nav,
+    NavDropdown,
+    Form,
+    FormControl,
+    Button,
+    Image, ModalFooter
+} from "react-bootstrap";
 import {BrowserRouter as Router, Route, Switch,} from 'react-router-dom'
 import Home from "./Component/Home";
 import About from "./Component/About";
@@ -11,16 +23,31 @@ import Products from './Component/Products'
 class App extends Component {
     constructor() {
         super();
+        this.state = {
+
+        }
+    }
+
+    clickHandlerSearch = (e) => {
+        this.setState({
+            search: e.target.value
+        })
     }
 
     render() {
         return (
             <>
+                <br/>
+
                 <Container>
                     <Row>
                         <Col>
                             <Navbar bg="light" expand="lg">
-                                <Navbar.Brand href="/home">Power Component</Navbar.Brand>
+                                <Navbar.Brand href="/home">
+                                    <Image src="power-logo-19324008.jpg" style={{
+                                    width: "40px"}}>
+
+                                </Image></Navbar.Brand>
                                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="mr-auto">
@@ -54,6 +81,11 @@ class App extends Component {
                         </Col>
                     </Row>
                 </Container>
+                <ModalFooter>
+                   <div style={{textAlign: "center", width: "100%"}}>
+                       Copyright ©2019 Power Component Co. IT Dept.
+                   </div>
+                </ModalFooter>
             </>
         );
 

@@ -15,8 +15,8 @@ class Contact extends Component {
                 <Jumbotron>
                     <Figure>
                         <Figure.Image
-                            width={350}
-                            height={200}
+                            width={400}
+                            height={250}
                             alt="contact us"
                             src="advantages-and-disadvantages-of-telephone-interview-surveys-1080x675.jpg"
                         />
