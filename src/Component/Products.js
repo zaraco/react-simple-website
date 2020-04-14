@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Figure, Container, Row, Col, Image} from "react-bootstrap";
+import {Figure, Container, Row, Col, Jumbotron} from "react-bootstrap";
 
 class Contact extends Component {
     constructor() {
@@ -9,6 +9,9 @@ class Contact extends Component {
     render() {
         return (
             <div>
+                <br/>
+                <br/>
+                <Jumbotron>
                 <Container>
                     <Row>
                         <Col xs={6} md={4}>
@@ -52,6 +55,7 @@ class Contact extends Component {
                         </Col>
                     </Row>
                 </Container>
+                </Jumbotron>
 
             </div>
         );

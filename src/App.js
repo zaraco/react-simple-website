@@ -26,14 +26,13 @@ class App extends Component {
                                     <Nav className="mr-auto">
                                         <Nav.Link href="/home" >Home</Nav.Link>
                                         <Nav.Link href="/About">About Us</Nav.Link>
-                                        <Nav.Link href="/Contact">Contact Us</Nav.Link>
                                         <NavDropdown title="Products" id="basic-nav-dropdown">
                                             <NavDropdown.Item href="/products">MV Cable</NavDropdown.Item>
                                             <NavDropdown.Item href="/products">Cable Tray</NavDropdown.Item>
                                             <NavDropdown.Item href="/products">Tower Component</NavDropdown.Item>
-                                            <NavDropdown.Divider/>
-                                            <NavDropdown.Item href="#">MV Switchgear</NavDropdown.Item>
                                         </NavDropdown>
+                                        <Nav.Link href="/Contact">Contact Us</Nav.Link>
+
                                     </Nav>
                                     <Form inline>
                                         <FormControl type="text" placeholder="Search" className="mr-sm-2"/>
@@ -47,8 +46,8 @@ class App extends Component {
                                 <Switch>
                                     <Route path="/home" component={Home}/>
                                     <Route path="/about" component={About}/>
-                                    <Route path="/contact" component={Contact}/>
                                     <Route path="/products" component={Products}/>
+                                    <Route path="/contact" component={Contact}/>
                                 </Switch>
                             </Router>
 

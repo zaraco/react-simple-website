@@ -9,6 +9,7 @@ class Home extends Component {
     render() {
         return (
             <div>
+
                 <Carousel>
                     <Carousel.Item>
                         <img
@@ -45,7 +46,9 @@ class Home extends Component {
                     Our company which has been qualified through its managers and engineers with more than 20 years of
                     experience
                 </p>
+
             </div>
+
         );
     }
 }
