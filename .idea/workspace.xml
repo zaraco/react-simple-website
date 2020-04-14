@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa30e457-460c-449a-ad73-bb0bb65b3169" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Component/Products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Component/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586853438620</updated>
-      <workItem from="1586853443615" duration="6267000" />
+      <workItem from="1586853443615" duration="9565000" />
     </task>
     <servers />
   </component>
@@ -66,21 +69,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1105" height="215" key="GridCell.Tab.0.bottom" timestamp="1586866508738">
+    <state x="461" y="249" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586868285494">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
-    <state width="1105" height="215" key="GridCell.Tab.0.bottom/0.23.1440.831@0.23.1440.831" timestamp="1586866508738" />
-    <state width="1105" height="215" key="GridCell.Tab.0.center" timestamp="1586866508737">
+    <state x="461" y="249" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.831@0.23.1440.831" timestamp="1586868285494" />
+    <state width="1105" height="215" key="GridCell.Tab.0.bottom" timestamp="1586869860139">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
-    <state width="1105" height="215" key="GridCell.Tab.0.center/0.23.1440.831@0.23.1440.831" timestamp="1586866508737" />
-    <state width="1105" height="215" key="GridCell.Tab.0.left" timestamp="1586866508736">
+    <state width="1105" height="215" key="GridCell.Tab.0.bottom/0.23.1440.831@0.23.1440.831" timestamp="1586869860139" />
+    <state width="1105" height="215" key="GridCell.Tab.0.center" timestamp="1586869860138">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
-    <state width="1105" height="215" key="GridCell.Tab.0.left/0.23.1440.831@0.23.1440.831" timestamp="1586866508736" />
-    <state width="1105" height="215" key="GridCell.Tab.0.right" timestamp="1586866508737">
+    <state width="1105" height="215" key="GridCell.Tab.0.center/0.23.1440.831@0.23.1440.831" timestamp="1586869860138" />
+    <state width="1105" height="215" key="GridCell.Tab.0.left" timestamp="1586869860138">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
-    <state width="1105" height="215" key="GridCell.Tab.0.right/0.23.1440.831@0.23.1440.831" timestamp="1586866508737" />
+    <state width="1105" height="215" key="GridCell.Tab.0.left/0.23.1440.831@0.23.1440.831" timestamp="1586869860138" />
+    <state width="1105" height="215" key="GridCell.Tab.0.right" timestamp="1586869860139">
+      <screen x="0" y="23" width="1440" height="831" />
+    </state>
+    <state width="1105" height="215" key="GridCell.Tab.0.right/0.23.1440.831@0.23.1440.831" timestamp="1586869860139" />
   </component>
 </project>

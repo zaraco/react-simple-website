@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Route, Switch,} from 'react-router-dom'
 import Home from "./Component/Home";
 import About from "./Component/About";
 import Contact from "./Component/Contact";
+import Products from './Component/Products'
 
 class App extends Component {
     constructor() {
@@ -24,12 +25,12 @@ class App extends Component {
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="mr-auto">
                                         <Nav.Link href="/home" >Home</Nav.Link>
-                                        <Nav.Link href="/About">About</Nav.Link>
-                                        <Nav.Link href="/Contact">Contact</Nav.Link>
+                                        <Nav.Link href="/About">About Us</Nav.Link>
+                                        <Nav.Link href="/Contact">Contact Us</Nav.Link>
                                         <NavDropdown title="Products" id="basic-nav-dropdown">
-                                            <NavDropdown.Item href="#">MV Cable</NavDropdown.Item>
-                                            <NavDropdown.Item href="#">Cable Tray</NavDropdown.Item>
-                                            <NavDropdown.Item href="#">Tower Component</NavDropdown.Item>
+                                            <NavDropdown.Item href="/products">MV Cable</NavDropdown.Item>
+                                            <NavDropdown.Item href="/products">Cable Tray</NavDropdown.Item>
+                                            <NavDropdown.Item href="/products">Tower Component</NavDropdown.Item>
                                             <NavDropdown.Divider/>
                                             <NavDropdown.Item href="#">MV Switchgear</NavDropdown.Item>
                                         </NavDropdown>
@@ -42,40 +43,12 @@ class App extends Component {
                             </Navbar>
                             <br/>
 
-                            <Carousel>
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block w-75"
-                                        src="download (1).jpeg"
-                                        alt="First Refinery"
-                                    />
-
-                                </Carousel.Item>
-
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block w-75"
-                                        src="download (2).jpeg"
-                                        alt="Second Refinery"
-                                    />
-
-                                </Carousel.Item>
-
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block w-75"
-                                        src="download (3).jpeg"
-                                        alt="Third Refinery"
-                                    />
-
-                                </Carousel.Item>
-                            </Carousel>
                             <Router>
                                 <Switch>
-                                    <Route path="/"/>
-                                    <Route path="/Home" component={Home}/>
-                                    <Route path="/About" component={About}/>
-                                    <Route path="/Contact" component={Contact}/>
+                                    <Route path="/home" component={Home}/>
+                                    <Route path="/about" component={About}/>
+                                    <Route path="/contact" component={Contact}/>
+                                    <Route path="/products" component={Products}/>
                                 </Switch>
                             </Router>
 
