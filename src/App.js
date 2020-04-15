@@ -27,17 +27,17 @@ class App extends Component {
         const products = [
             {
                 name: 'mv cable',
-                image: '',
+                image: 'images (1).jpeg',
                 url: ''
             },
             {
                 name: 'cable tray',
-                image: '',
+                image: 'download (4).jpeg',
                 url: ''
             },
             {
                 name: 'tower component',
-                image: '',
+                image: 'download (6).jpeg',
                 url: ''
             },
         ]
@@ -75,7 +75,8 @@ class App extends Component {
 
         let productsList = this.state.filtered.length ? this.state.filtered.map((product) =>
             <ListGroup.Item>
-                <a href="/products">{product.name}</a>
+
+                <a href="/products"><img src={product.image} style={{width: "40px"}}/> {product.name}</a>
             </ListGroup.Item>
         ) : ''
         return (
