@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fa30e457-460c-449a-ad73-bb0bb65b3169" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Contact.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586853438620</updated>
       <workItem from="1586853443615" duration="21765000" />
-      <workItem from="1586939191951" duration="9825000" />
+      <workItem from="1586939191951" duration="11284000" />
     </task>
     <servers />
   </component>
@@ -70,22 +72,22 @@
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state x="461" y="249" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.831@0.23.1440.831" timestamp="1586868285494" />
-    <state width="1105" height="215" key="GridCell.Tab.0.bottom" timestamp="1586959310676">
+    <state width="1105" height="215" key="GridCell.Tab.0.bottom" timestamp="1586962287508">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
-    <state width="1105" height="215" key="GridCell.Tab.0.bottom/0.23.1440.831@0.23.1440.831" timestamp="1586959310676" />
-    <state width="1105" height="215" key="GridCell.Tab.0.center" timestamp="1586959310675">
+    <state width="1105" height="215" key="GridCell.Tab.0.bottom/0.23.1440.831@0.23.1440.831" timestamp="1586962287508" />
+    <state width="1105" height="215" key="GridCell.Tab.0.center" timestamp="1586962287506">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
-    <state width="1105" height="215" key="GridCell.Tab.0.center/0.23.1440.831@0.23.1440.831" timestamp="1586959310675" />
-    <state width="1105" height="215" key="GridCell.Tab.0.left" timestamp="1586959310675">
+    <state width="1105" height="215" key="GridCell.Tab.0.center/0.23.1440.831@0.23.1440.831" timestamp="1586962287506" />
+    <state width="1105" height="215" key="GridCell.Tab.0.left" timestamp="1586962287503">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
-    <state width="1105" height="215" key="GridCell.Tab.0.left/0.23.1440.831@0.23.1440.831" timestamp="1586959310675" />
-    <state width="1105" height="215" key="GridCell.Tab.0.right" timestamp="1586959310676">
+    <state width="1105" height="215" key="GridCell.Tab.0.left/0.23.1440.831@0.23.1440.831" timestamp="1586962287503" />
+    <state width="1105" height="215" key="GridCell.Tab.0.right" timestamp="1586962287507">
       <screen x="0" y="23" width="1440" height="831" />
     </state>
-    <state width="1105" height="215" key="GridCell.Tab.0.right/0.23.1440.831@0.23.1440.831" timestamp="1586959310676" />
+    <state width="1105" height="215" key="GridCell.Tab.0.right/0.23.1440.831@0.23.1440.831" timestamp="1586962287507" />
     <state x="29" y="35" width="1379" height="807" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586952469155">
       <screen x="0" y="23" width="1440" height="831" />
     </state>

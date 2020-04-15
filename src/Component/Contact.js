@@ -3,6 +3,7 @@ import {Figure, Jumbotron} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAddressBook, faMailBulk} from "@fortawesome/free-solid-svg-icons"
 import {faTwitter, faFacebookSquare, faInstagram} from '@fortawesome/free-brands-svg-icons'
+import GoogleMapReact from 'google-map-react';
 
 class Contact extends Component {
     constructor() {
@@ -50,6 +51,17 @@ class Contact extends Component {
                         <FontAwesomeIcon icon={faInstagram}/>
                         <span> @ZAHRA90 </span>
                     </Figure>
+                    <div style={{ height: '300px', width: '100%' }}>
+                    <GoogleMapReact
+                        bootstrapURLKeys={{ key: '' }}
+                        defaultCenter={{
+                            lat: 59.95,
+                            lng: 30.33
+                        }}
+                        defaultZoom="11">
+                    </GoogleMapReact>
+                    </div>
+
                 </Jumbotron>
             </div>
         );
