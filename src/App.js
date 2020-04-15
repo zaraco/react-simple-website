@@ -45,7 +45,7 @@ class App extends Component {
         this.state = {
 
             products: products,
-            filtered: products,
+            filtered: [],
             search: ''
 
         }
@@ -53,11 +53,13 @@ class App extends Component {
 
     changeHandlerSearch = (e) => {
         let filtered = []
-        this.state.products.forEach((product)=>{
-            if(product.name.toLowerCase().includes(e.target.value.toLowerCase())) {
-                filtered.push(product)
-            }
-        })
+        if(e.target.value!='') {
+            this.state.products.forEach((product) => {
+                if (product.name.toLowerCase().includes(e.target.value.toLowerCase())) {
+                    filtered.push(product)
+                }
+            })
+        }
         this.setState({
             search: e.target.value,
             filtered: filtered
@@ -67,9 +69,13 @@ class App extends Component {
 
     render() {
 
+        let productsMenu = this.state.products.length ? this.state.products.map((product) =>
+            <NavDropdown.Item href="/products">{product.name}</NavDropdown.Item>
+            ): ''
+
         let productsList = this.state.filtered.length ? this.state.filtered.map((product) =>
             <ListGroup.Item>
-                {product.name}
+                <a href="/products">{product.name}</a>
             </ListGroup.Item>
         ) : ''
         return (
@@ -91,10 +97,8 @@ class App extends Component {
                                     <Nav className="mr-auto">
                                         <Nav.Link href="/home">Home</Nav.Link>
                                         <Nav.Link href="/About">About Us</Nav.Link>
-                                        <NavDropdown title="Products" id="basic-nav-dropdown">
-                                            <NavDropdown.Item href="/products">MV Cable</NavDropdown.Item>
-                                            <NavDropdown.Item href="/products">Cable Tray</NavDropdown.Item>
-                                            <NavDropdown.Item href="/products">Tower Component</NavDropdown.Item>
+                                        <NavDropdown title="Products" id="basic-nav-dropdown"> {productsMenu}
+
                                         </NavDropdown>
                                         <Nav.Link href="/Contact">Contact Us</Nav.Link>
 
@@ -104,10 +108,12 @@ class App extends Component {
                                     </Form>
                                 </Navbar.Collapse>
                             </Navbar>
+                            <div style={{position: "absolute", top: "50px", right: "50px", zIndex: "10"}}>
+                                <ListGroup>
+                                    {productsList}
+                                </ListGroup>
+                            </div>
                             <br/>
-                            <ListGroup>
-                                {productsList}
-                            </ListGroup>
                             <Router>
                                 <Switch>
                                     <Route path="/home" component={Home}/>
