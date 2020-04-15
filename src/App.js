@@ -19,22 +19,59 @@ import Home from "./Component/Home";
 import About from "./Component/About";
 import Contact from "./Component/Contact";
 import Products from './Component/Products'
+import ListGroup from "react-bootstrap/ListGroup";
 
 class App extends Component {
     constructor() {
         super();
+        const products = [
+            {
+                name: 'mv cable',
+                image: '',
+                url: ''
+            },
+            {
+                name: 'cable tray',
+                image: '',
+                url: ''
+            },
+            {
+                name: 'tower component',
+                image: '',
+                url: ''
+            },
+        ]
+
         this.state = {
+
+            products: products,
+            filtered: products,
+            search: ''
 
         }
     }
 
-    clickHandlerSearch = (e) => {
+    changeHandlerSearch = (e) => {
+        let filtered = []
+        this.state.products.forEach((product)=>{
+            if(product.name.toLowerCase().includes(e.target.value.toLowerCase())) {
+                filtered.push(product)
+            }
+        })
         this.setState({
-            search: e.target.value
+            search: e.target.value,
+            filtered: filtered
         })
     }
 
+
     render() {
+
+        let productsList = this.state.filtered.length ? this.state.filtered.map((product) =>
+            <ListGroup.Item>
+                {product.name}
+            </ListGroup.Item>
+        ) : ''
         return (
             <>
                 <br/>
@@ -45,13 +82,14 @@ class App extends Component {
                             <Navbar bg="light" expand="lg">
                                 <Navbar.Brand href="/home">
                                     <Image src="power-logo-19324008.jpg" style={{
-                                    width: "40px"}}>
+                                        width: "40px"
+                                    }}>
 
-                                </Image></Navbar.Brand>
+                                    </Image></Navbar.Brand>
                                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="mr-auto">
-                                        <Nav.Link href="/home" >Home</Nav.Link>
+                                        <Nav.Link href="/home">Home</Nav.Link>
                                         <Nav.Link href="/About">About Us</Nav.Link>
                                         <NavDropdown title="Products" id="basic-nav-dropdown">
                                             <NavDropdown.Item href="/products">MV Cable</NavDropdown.Item>
@@ -62,13 +100,14 @@ class App extends Component {
 
                                     </Nav>
                                     <Form inline>
-                                        <FormControl type="text" placeholder="Search" className="mr-sm-2"/>
-                                        <Button variant="outline-success">Search</Button>
+                                        <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange={this.changeHandlerSearch}/>
                                     </Form>
                                 </Navbar.Collapse>
                             </Navbar>
                             <br/>
-
+                            <ListGroup>
+                                {productsList}
+                            </ListGroup>
                             <Router>
                                 <Switch>
                                     <Route path="/home" component={Home}/>
@@ -82,9 +121,9 @@ class App extends Component {
                     </Row>
                 </Container>
                 <ModalFooter>
-                   <div style={{textAlign: "center", width: "100%"}}>
-                       Copyright ©2019 Power Component Co. IT Dept.
-                   </div>
+                    <div style={{textAlign: "center", width: "100%"}}>
+                        Copyright ©2020 Power Component Co. IT Dept.
+                    </div>
                 </ModalFooter>
             </>
         );
